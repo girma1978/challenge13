@@ -1,54 +1,26 @@
-# React + TypeScript + Vite
+# Candidate Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a Candidate Search Application where users can view and manage potential candidates for a job role. The application allows users to cycle through a list of candidates, view their details, and save candidates to a "potential candidates" list. The saved list of potential candidates is persisted and can be viewed later, even if the page is reloaded.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Candidate Viewing**: Users can view details for a candidate including their name, username, location, avatar, email, HTML URL, and company.
+- **Save Candidate**: Users can click the "+" button to add the current candidate to a "potential candidates" list.
+- **Skip Candidate**: Users can click the "-" button to skip the current candidate and view the next one without saving the current candidate.
+- **No More Candidates**: If there are no more candidates to review, an appropriate message will inform the user.
+- **Potential Candidates List**: The application keeps track of all saved candidates and allows users to view a list with their details.
+- **Persistence**: Saved candidates persist on page reload and are available for review even after the page is refreshed.
+- **Empty State**: If no candidates have been saved, an appropriate message will inform the user.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Frontend**: HTML, CSS, JavaScript (Vanilla)
+- **Local Storage**: To persist the list of potential candidates across page reloads.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/candidate-search-app.git
