@@ -71,8 +71,8 @@ const CandidateSearch = () => {
               View Profile
             </a>
           </div>
-          <button onClick={handleSaveCandidate}>+</button>
-          <button onClick={handleSkipCandidate}>-</button>
+          <button onClick={handleSkipCandidate}>➖</button>
+          <button onClick={handleSaveCandidate}>➕</button>
         </div>
       ) : (
         <p>Loading candidate...</p>

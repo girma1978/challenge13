@@ -57,7 +57,7 @@ const SavedCandidates = () => {
                 <td>{candidate.bio || 'No bio available'}</td>
                 <td>
                   <button onClick={() => handleReject(candidate)} className="reject-button">
-                    Reject
+                    ➖
                   </button>
                 </td>
               </tr>

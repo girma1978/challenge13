@@ -12,7 +12,6 @@ body {
     display: flex;
     justify-content: flex-start; /* Aligns items to the left */
     align-items: center;
-    
 }
 
 .nav-container {
@@ -88,16 +87,22 @@ body {
 
 /* Reject button Styles */
 .reject-button {
-    background-color: red;
+    background-color: red !important;  /* Ensures the button is red by default */
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50%;  /* Circular shape */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .reject-button:hover {
-    background-color: darkred;
+    background-color: darkred !important; /* Darker red when hovered */
+    transform: scale(1.1); /* Slightly enlarges button */
+}
+
+.reject-button:active {
+    transform: scale(0.95); /* Slightly shrinks when clicked */
 }
 
 /* Hover effect for rows */
@@ -199,4 +204,44 @@ body {
     .nav-link {
         font-size: 16px;
     }
+}
+
+/* General button styles */
+button {
+    width: 45px; /* Slightly increased for better visibility */
+    height: 45px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px; /* Increased space between buttons */
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a slight shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Red "-" button */
+button:first-of-type {
+    background-color: red;
+    color: white;
+}
+
+/* Green "+" button */
+button:last-of-type {
+    background-color: green;
+    color: white;
+}
+
+/* Hover effect */
+button:hover {
+    transform: scale(1.1); /* Slightly enlarges button */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Active (clicked) effect */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
