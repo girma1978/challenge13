@@ -1,0 +1,202 @@
+/* Global Styles */
+body {
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================== Navigation Styles ================== */
+.nav {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start; /* Ensures content stays on the left */
+}
+
+.nav-item {
+    margin-right: 20px; /* Adds spacing between the links */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+/* ================== Saved Candidates ================== */
+.saved-candidates-container {
+    padding: 20px;
+}
+
+.saved-candidates-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.no-candidates-message {
+    color: #666;
+    font-size: 18px;
+}
+
+/* Saved Candidates Table Styles */
+.saved-candidates-table {
+    width: 60%;
+    margin: auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Ensures the borders between cells collapse into a single line */
+    border: 1px solid #ddd; /* Adds a border around the table */
+}
+
+.saved-candidates-header th {
+    background-color: #04030d56;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd; /* Only a line between header cells and table body */
+    border-right: 1px solid #ddd; /* Vertical line between header columns */
+}
+
+.saved-candidates-row td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Only a line between rows */
+    border-right: 1px solid #ddd; /* Vertical line between columns */
+}
+
+.saved-candidates-row td:last-child {
+    border-right: none; /* Removes the right border from the last column */
+}
+
+.candidate-avatar {
+    border-radius: 50%;
+}
+
+/* Reject button Styles */
+.reject-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reject-button:hover {
+    background-color: darkred;
+}
+
+/* Hover effect for rows */
+.saved-candidates-row:hover {
+    background-color: #1d8c76;
+}
+
+/* ================== Candidate Search ================== */
+.container {
+    padding: 20px;
+    font-family: 'Inter Tight', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.error-message {
+    color: red;
+    font-size: 18px;
+}
+
+.candidate-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.candidate-info img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.candidate-info h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.candidate-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* ================== Media Queries ================== */
+/* Adjusting the navigation bar for mobile responsiveness */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-link {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding: 10px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
