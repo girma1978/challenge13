@@ -6,7 +6,7 @@ This project is a Candidate Search Application where users can view and manage p
 
 ## Features
 
-- **Candidate Viewing**: Users can view details for a candidate including their name, username, location, avatar, email, HTML URL, and company.
+- **Candidate Viewing**: Users can view details for a candidate, including their name, username, location, avatar, email, HTML URL, and company.
 - **Save Candidate**: Users can click the "+" button to add the current candidate to a "potential candidates" list.
 - **Skip Candidate**: Users can click the "-" button to skip the current candidate and view the next one without saving the current candidate.
 - **No More Candidates**: If there are no more candidates to review, an appropriate message will inform the user.
@@ -19,8 +19,7 @@ This project is a Candidate Search Application where users can view and manage p
 - **Frontend**: HTML, CSS, JavaScript (Vanilla)
 - **Local Storage**: To persist the list of potential candidates across page reloads.
 
-## Installation
+## Deployment
 
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/candidate-search-app.git
+- **GitHub Repository**: [https://github.com/girma1978/challenge13](https://github.com/girma1978/challenge13)
+- **Deployed Application**: [https://challenge13-fypj.onrender.com/](https://challenge13-fypj.onrender.com/)
