@@ -16,7 +16,7 @@ This project is a Candidate Search Application where users can view and manage p
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript (Vanilla)
+- **Frontend**: HTML, CSS, JavaScript, react and vite
 - **Local Storage**: To persist the list of potential candidates across page reloads.
 
 ## Deployment
